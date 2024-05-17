@@ -1,0 +1,61 @@
+/* Hide the default checkbox */
+.MainPageGroup{
+    height: 100vh !important;
+    transition: 0.5s ease;
+}
+.lest {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lest .iconLest {
+    position: relative;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.lest .iconLest span {
+    background-color: black;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    transition: ease 0.3s;
+}
+
+.lest .iconLest span:first-child {
+    top: 0;
+}
+
+.lest .iconLest span:nth-child(2) {
+    top: 8px;
+    width: 80%;
+}
+
+.lest .iconLest span:last-child {
+    top: 16px;
+}
+
+.lest .iconLest:hover span:nth-child(2) {
+    width: 100%;
+}
+
+.lest .iconLest .bsNo2:nth-child(2) {
+    opacity: 0;
+}
+
+.lest .iconLest .bsNo1:first-child,
+.lest .iconLest .bsNo3:last-child {
+    top: 6px;
+}
+
+.lest .iconLest .bsNo1:first-child {
+    rotate: 45deg;
+}
+
+.lest .iconLest .bsNo3:last-child {
+    rotate: -45deg;
+}
